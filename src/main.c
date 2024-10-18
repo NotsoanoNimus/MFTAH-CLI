@@ -443,9 +443,7 @@ evaluate_options(int argc,
         ABORT("The maximum thread count for MFTAH is limited to %u.", MFTAH_MAX_THREAD_COUNT);
     } else if (MFTAH_MODE_DECRYPT == sOptions.Mode && sOptions.Threads) {
         PRINTLN("WARNING: You specified a 'threads' value, but this is a decryption operation. Ignoring.");
-    }
-
-    if (sOptions.Threads < 1) {
+    } else if (MFTAH_MODE_DECRYPT != sOptions.Mode && sOptions.Threads < 1) {
         PRINTLN("WARNING: Threads not set or less than 0. Defaulting to %u.", MFTAH_DEFAULT_THREAD_COUNT);
         sOptions.Threads = MFTAH_DEFAULT_THREAD_COUNT;
     }
