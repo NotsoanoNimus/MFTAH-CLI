@@ -1,6 +1,8 @@
 # MFTAH-CLI
 Linux CLI application for MFTAH encapsulation and decapsulation (see https://github.com/NotsoanoNimus/MFTAH).
 
+### The contents of this repo have been migrated to the parent project (link above).
+
 ![image](https://github.com/user-attachments/assets/ecfa7b98-7c7d-47db-b906-8a0ad3ead2fd)
 
 
